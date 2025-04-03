@@ -261,7 +261,7 @@ int SkinRegistry::PopulateRecursive(const std::wstring& path, std::vector<std::w
 			index = newIndex;
 		}
 
-		if (popFolder)
+		if (popFolder && !m_Folders.empty())
 		{
 			m_Folders.pop_back();
 		}
